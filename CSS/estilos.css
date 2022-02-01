@@ -137,11 +137,21 @@ footer{
     padding: 1em 0em 0em 2.5em;
     z-index: 0;
 
-/*------ Animación de la moneda ------*/
-
+    /*------ Animación de la moneda ------*/
+    animation-name: moneda;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
 }
-
-
+    @keyframes moneda{
+        from{
+            transform: rotateY(0); 
+        }
+    
+        to{
+            transform: rotateY(360deg); 
+        }
+    }
 
 /*-------------------------------- Main: Clientes----------------------------------------*/
 
@@ -181,10 +191,23 @@ footer{
     width: 5.5em;
     margin: 1em;
 
-/*------ Animación de la estrella ------*/
-
+    /*------ Animación de la estrella ------*/
+    animation-name: agrandar;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
 }
 
+    @keyframes agrandar{
+    form{
+        transform: scale(1.0);
+    }
+
+    to{
+        transform: scale(1.2);
+    }
+}
 /*--- Bloque de comentarios ----*/
 
 .comentarios{
